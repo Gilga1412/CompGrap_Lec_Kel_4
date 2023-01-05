@@ -16,7 +16,7 @@ var init = () => {
 
     rendering = new THREE.WebGLRenderer()
     rendering.setSize(window.innerWidth, window.innerHeight)
-    rendering.setClearColor("cyan")
+    rendering.setClearColor("skyBlue")
 
     document.body.appendChild(rendering.domElement)
     control = new OrbitControls(cam, rendering.domElement)
