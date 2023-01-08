@@ -9,7 +9,9 @@ var init = () => {
 
     const FOV = 45
     const ASPECT = window.innerWidth / window.innerHeight
-    cam = new THREE.PerspectiveCamera(FOV, ASPECT)
+    const NEAR = 0.1
+    const FAR = 1000
+    cam = new THREE.PerspectiveCamera(FOV, ASPECT,NEAR,FAR)
     cam.position.set(0, 75, 200)
 
     cam.lookAt(0, 0, 0)
