@@ -827,7 +827,6 @@ let SkyBox = () => {
     canvas.add(boxMesh)
 }
 
-
 let pointLight = () => {
     const lighting = new THREE.PointLight("#FFFFFF", 0.34, 10000)
     lighting.castShadow = true
