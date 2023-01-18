@@ -11,7 +11,7 @@ var init = () => {
     const ASPECT = window.innerWidth / window.innerHeight
     const NEAR = 0.1
     const FAR = 1000
-    cam = new THREE.PerspectiveCamera(FOV, ASPECT,NEAR,FAR)
+    cam = new THREE.PerspectiveCamera(FOV, ASPECT, NEAR, FAR)
     cam.position.set(0, 75, 200)
 
     cam.lookAt(0, 0, 0)
@@ -36,7 +36,7 @@ var init = () => {
     pipe2()
 }
 
-//musuh
+//musuh besar
 var createBigBomb = () => {
     var createHead = () => {
         let geometry, material
