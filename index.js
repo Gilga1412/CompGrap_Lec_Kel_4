@@ -9,7 +9,7 @@ var init = () => {
 
     const FOV = 45
     const ASPECT = window.innerWidth / window.innerHeight
-    const NEAR = 0.1
+    const NEAR = 1
     const FAR = 1000
     cam = new THREE.PerspectiveCamera(FOV, ASPECT, NEAR, FAR)
     cam.position.set(0, 75, 200)
@@ -34,6 +34,10 @@ var init = () => {
     three2()
     pipe1()
     pipe2()
+    boxLong1()
+    boxLong2()
+    boxQuest()
+    SkyBox()
 }
 
 //musuh besar
@@ -555,6 +559,212 @@ let pipe2 = () => {
     head()
 }
 
+// kotak pertama(panjang)
+var boxLong1 = () => {
+    var BrickBox1 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-90, 70, -20)
+        canvas.add(boxMesh)
+    }
+    BrickBox1()
+    
+    var BrickBox2 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-90, 70, -40)
+        canvas.add(boxMesh)
+    }
+    BrickBox2()
+
+    var BrickBox3 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-90, 70, -60)
+        canvas.add(boxMesh)
+    }
+    BrickBox3()
+    
+    var QuestBox1 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario quest box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-90, 70, -50)
+        canvas.add(boxMesh)
+    }
+    QuestBox1()
+
+    var QuestBox2 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario quest box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-90, 70, -30)
+        canvas.add(boxMesh)
+    }
+    QuestBox2()
+}
+
+var boxLong2 = () => {
+    var BrickBox1 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-20, 55, -70)
+        canvas.add(boxMesh)
+    }
+    BrickBox1()
+    
+    var BrickBox2 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-20, 55, -80)
+        canvas.add(boxMesh)
+    }
+    BrickBox2()
+
+    var BrickBox3 = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario brick box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(-20, 55, -90)
+        canvas.add(boxMesh)
+    }
+    BrickBox3()
+}
+
+// kotak kedua (kotak tanda tanya)
+let boxQuest = () => {
+    let createBoxQ = () => {
+        let boxWidth = 10
+        let boxHeight = 10
+        let boxDepth = 10
+        let boxWidthSegments = 1
+        let boxHeightSegments = 5
+        let boxDepthSegments = 7
+
+        let geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth, boxWidthSegments, boxHeightSegments, boxDepthSegments)
+        let texture = new THREE.TextureLoader()
+        let boxQuestion = texture.load("./assets/textures/mario quest box.png")
+        let material = new THREE.MeshStandardMaterial({
+            map: boxQuestion,
+        })
+
+        let boxMesh = new THREE.Mesh(geometry, material)
+        boxMesh.castShadow = true
+        boxMesh.position.set(30, 40, 80)
+        canvas.add(boxMesh)
+    }
+    createBoxQ()
+}
+
 //lantai
 let makeFloor = () => {
     let geo = new THREE.PlaneGeometry(300, 300)
@@ -574,6 +784,49 @@ let makeFloor = () => {
 
     canvas.add(mesh)
 }
+
+// Skybox()
+let SkyBox = () => {
+    let BoxGeo = new THREE.BoxGeometry(500,500,500)
+    let BoxLoader = new THREE.TextureLoader()
+
+    let right = BoxLoader.load('./assets/sky box/868428.png')
+    let left = BoxLoader.load('./assets/sky box/868428.png')
+    let up = BoxLoader.load('./assets/sky box/868428(1).png')
+    let down = BoxLoader.load('./assets/sky box/868428(1).png')
+    let front = BoxLoader.load('./assets/sky box/868428.png')
+    let back = BoxLoader.load('./assets/sky box/868428.png')
+
+    let BoxMat = [
+        new THREE.MeshBasicMaterial({
+            map : left,
+            side: THREE.BackSide
+        }),
+        new THREE.MeshBasicMaterial({
+            map : right,
+            side: THREE.BackSide
+        }),
+        new THREE.MeshBasicMaterial({
+            map : up,
+            side: THREE.BackSide
+        }),
+        new THREE.MeshBasicMaterial({
+            map : down,
+            side: THREE.BackSide
+        }),
+        new THREE.MeshBasicMaterial({
+            map : back,
+            side: THREE.BackSide
+        }),
+        new THREE.MeshBasicMaterial({
+            map : front,
+            side: THREE.BackSide
+        }),
+    ]
+    let boxMesh = new THREE.Mesh(BoxGeo,BoxMat)
+    canvas.add(boxMesh)
+}
+
 
 let pointLight = () => {
     const lighting = new THREE.PointLight("#FFFFFF", 0.34, 10000)
